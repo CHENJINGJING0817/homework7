@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:1200px) {
+            .con{
+            display: flex;  
+            height: 60px;
+            }
+            .con div{
+            height: 60px;
+            flex-grow: 1;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            }
+        }
+
+
+        @media screen and (min-width:992px) and (max-width:1200px){
+        .con{
+            display: flex;  
+            flex-wrap: wrap;
+        }
+        .con div{
+            height: 60px;
+            flex-grow: 1;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+        }
+        .con div:nth-child(1){
+            flex-basis: 100%;
+        }
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px){
+         .con{
+            display: flex;  
+            flex-wrap: wrap;
+        }
+        .con div{
+            height: 60px;
+            flex-grow: 1;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            flex-basis: 50%;
+        } 
+        }
+
+        @media screen and (max-width:768px){
+        .con{
+            display: flex;  
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .con div{
+            height: 60px;
+            flex-grow: 1;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+        } 
+        }
+
+        .con div:nth-child(1){
+            background-color: cornflowerblue;
+        }
+        .con div:nth-child(2){
+            background-color: skyblue;
+        }
+        .con div:nth-child(3){
+            background-color:lightblue;
+        }
+        .con div:nth-child(4){
+            background-color:lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
